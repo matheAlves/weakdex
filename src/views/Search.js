@@ -131,7 +131,7 @@ export default function Search({ navigation }) {
     );
   };
 
-  scrollEndTimer = null;
+  let scrollEndTimer = null;
   const onMomentumScrollBegin = () => {
     clearTimeout(scrollEndTimer);
   };
@@ -187,7 +187,7 @@ export default function Search({ navigation }) {
         ]}
       >
         <SearchBar
-          placeholder="Search by name"
+          placeholder="Pesquise pelo nome"
           onChangeText={handleSearch}
           value={searchText}
           platform="ios"
